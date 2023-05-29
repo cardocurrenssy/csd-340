@@ -1,0 +1,43 @@
+/*
+    Ricardo Orlando
+    Bellevue University
+    Module Two 05/28/23 Building a Web Page Exercise, Part 2
+    CSS document
+*/
+h1{
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;  
+}
+
+h2{
+    font-weight: 500;
+    text-align: left;
+    padding-top: 15px;
+}
+p{
+    line-height: 1.4em;
+}
+address{
+    text-align: center;
+}
+a{
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #4F3674;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    background: #D6A800;
+}
+a:visited{
+    font-style: oblique;
+    color: gray;
+}
+.sentence{
+    font-style: italic;
+}
+.intro{
+    text-indent: 2em;
+}
