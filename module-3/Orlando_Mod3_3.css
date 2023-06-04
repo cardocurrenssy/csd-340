@@ -1,0 +1,56 @@
+/*
+    Ricardo Orlando
+    Bellevue University
+    Module Three 06/04/23 CSS for 3.3 Assignment
+    CSS document
+*/
+h1{
+    text-align: center;
+}
+li{
+    font-weight: 300;
+}
+h3{
+    font-weight: 500;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.left{
+    flex: 1;
+    width: 45%;
+    border: 1px;
+    border-color: red;
+    border-radius: 15px;
+    border-style: solid;
+}
+.right{
+    
+    width: 45%;
+    border: 1px;
+    border-color: red;
+    border-radius: 15px;
+    border-style: dotted;
+
+}
+.left,.right{
+    margin-right: 30px;
+}
+.footer{
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+ol{
+    padding: 10px;
+    list-style-position: inside;
+}
+ul{
+    padding: 10px;
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+a:hover{
+    text-decoration: underline;
+}
