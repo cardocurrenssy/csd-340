@@ -1,0 +1,33 @@
+/*
+    Ricardo Orlando
+    Bellevue University
+    Module Four 06/11/23 CSS for 4.2 Assignment
+    CSS document
+*/
+
+h1,h3,figure{
+    text-align: center;
+    color: rgba(2, 205, 221, 1.0);
+}
+.grid{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+}
+#image-gallery{
+    margin-top: 10%;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(2, 205, 221, 1.0);
+}
+.footer{
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+a:hover{
+    text-decoration: underline;
+}
