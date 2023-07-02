@@ -1,0 +1,41 @@
+<!--
+    Ricardo Orlando
+    Bellevue University
+    Module Nine 07/2/23 JavaScript Exercise - Part 1  
+    HTML document
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <script>
+        var firstValue = "announced";
+        var secondValue = "Drake";
+        var thirdValue = "postponed";
+        var fourthValue = "September";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        <p>The day before dropping his fifth solo mixtape, Dark Lane Demo Tapes, Drake <span id="announced">___________</span> that his sixth studio album would be 
+            released during the summer of 2020.</p>
+        <p>However, it was later postponed to January 2021, as revealed in the album’s trailer <span id="Drake">______</span> unveiled on his 34th birthday.</p>
+        <p>On January 20, 2021, Drake <span id="postponed">__________</span> the album a second time, saying that he was focusing on recovering from a knee injury 
+            he obtained in October 2020. He later officially confirmed the album to drop on <span id="September">_________</span> 3rd.</p>
+        <p>
+            <button type="button"
+            onclick="document.getElementById('announced').innerHTML = firstValue">announced</button> <br>
+            <button type="button"
+            onclick="document.getElementById('Drake').innerHTML = secondValue">Drake</button> <br>
+            <button type="button"
+            onclick="document.getElementById('postponed').innerHTML = thirdValue">postponed</button> <br>
+            <button type="button"
+            onclick="document.getElementById('September').innerHTML = fourthValue">September</button> <br>
+        </p>
+    </div>
+    
+</body>
+</html>
