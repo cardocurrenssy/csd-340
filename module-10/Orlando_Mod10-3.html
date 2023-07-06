@@ -1,0 +1,68 @@
+<!-- 
+    Ricardo Orlando
+    Bellevue University
+    Module Three 07/09/23 Assignment 10.3 JavaScript Part 2
+    HTML document -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSD 340 Web Development HTML and CSS</title>
+    <script>
+        function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "300px";
+        newNode.style.height = "200px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+      }
+      function changeImage(){
+        // function that changes an image when you click on it 
+        var imageDisplay = document.getElementById("img2");
+        if(imageDisplay.src.match("cave_01.jpg")){
+            imageDisplay.src = "cave_02.jpg";
+        }
+        else{
+            imageDisplay.src ="cave_01.jpg";
+        }
+      }
+      function darkImage(){
+        // function changes picture to the dark version
+        var img = document.getElementById("img1");
+        img.src = "moon_01.jpg"
+      }
+      function lightImage(){
+        // function changes picture to the light version
+        var img = document.getElementById("img1");
+        img.src = "moon_02.jpg"
+      }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+       <div>
+            <p>Images changes when user clicks a button</p>
+            <img src="moon_01.jpg" alt="" id="img1">
+            <p>Choose Dark or Light as your background Image</p>
+            <button id="darkBtn" onclick="darkImage()">Dark</button>
+            <button id="lightBtn" onclick="lightImage()">Light</button>
+       </div>
+       <br />
+       
+       <div>
+
+        <img src="cave_01.jpg" alt="" id="img2" onclick="changeImage()">
+        <p>Images Changes when image is click</p>
+
+       </div>
+    </main>
+    
+</body>
+</html>
