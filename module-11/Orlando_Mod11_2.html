@@ -65,9 +65,10 @@
 
   function showList() {
     for (var i = 0; i < inputData.length; i++) {
+      var count = i + 1;
       let divElement = document.createElement("div");
       divElement.classList.add("items");
-      let textNode = document.createTextNode(inputData[i]);
+      let textNode = document.createTextNode("Item " + count + " = " + inputData[i]);
       divElement.appendChild(textNode);
       main.appendChild(divElement);
     }
