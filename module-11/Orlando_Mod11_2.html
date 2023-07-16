@@ -1,0 +1,87 @@
+<!-- //
+//     Ricardo Orlando
+//     Bellevue University
+//     Module 11 Assignment  07/15/23
+//     A to-do list web development project
+//  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;500&family=Sriracha&family=Yuji+Syuku&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="Orlando_Mod11_2.css">
+</head>
+
+<body>
+  <section>
+    <h1>Assignment 11.2: JavaScript- Part 3</h1>
+  </section>
+  <main id="container">
+    <h3>ToDo List</h3>
+    <h4>Easy & Simple!</h4>
+    <ol>
+      <li>Start by typing your item in the text box then click Add</li>
+      <li>Click Display to see current items</li>
+      <li>Click Delete to delete the Last Entry</li>
+    </ol>
+    <section id="text">
+      <input type="text" placeholder="Enter Here" required id="user_input"><button id="add"
+        onclick="addData(); clearInput();">Add</button>
+      <div>
+        <button id="delete" onclick="deleteItem()">Delete</button>
+        <button id="display" onclick="showList()">Display</button>
+      </div>
+      <!-- <div id="items">
+              <p>
+                Grocery shopping after work
+              </p>
+            </div> -->
+    </section>
+  </main>
+
+</body>
+<script>
+  const main = document.querySelector("main");
+  const inputData = [];
+  function clearInput() {
+    var getValue = document.getElementById("user_input");
+    if (getValue.value != "") {
+      getValue.value = "";
+    }
+  }
+  const addData = () => {
+    const inputText = document.getElementById('user_input');
+    inputData.push(inputText.value);
+    console.log(inputData);
+    alert("Added");
+  }
+
+  function showList() {
+    for (var i = 0; i < inputData.length; i++) {
+      let divElement = document.createElement("div");
+      divElement.classList.add("items");
+      let textNode = document.createTextNode(inputData[i]);
+      divElement.appendChild(textNode);
+      main.appendChild(divElement);
+    }
+  }
+  function deleteItem() {
+    inputData.pop();
+    console.log(inputData);
+    var last = document.getElementsByClassName("items");
+    if (last.length > 0) {
+      var lastElement = last[last.length - 1];
+      lastElement.parentNode.removeChild(lastElement);
+    }
+  }
+
+</script>
+
+</html>
