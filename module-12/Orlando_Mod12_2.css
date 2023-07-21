@@ -1,0 +1,76 @@
+/*
+    Ricardo Orlando
+    Bellevue University
+    Module 12 07/23/23 CSS for 12.2 Assignment
+    CSS document
+*/
+h1{
+    text-align: center;
+}
+li{
+    font-weight: 300;
+}
+h3{
+    font-weight: 500;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.left{
+    flex: 1;
+    width: 45%;
+    border: 1px;
+    border-color: red;
+    border-radius: 15px;
+    border-style: solid;
+}
+.right{
+    
+    width: 45%;
+    border: 1px;
+    border-color: red;
+    border-radius: 15px;
+    border-style: dotted;
+
+}
+.left,.right{
+    margin-right: 30px;
+}
+.footer{
+    margin-top: 60%;
+    margin-bottom: 20px;
+    float: right;
+}
+ol{
+    padding: 10px;
+    list-style-position: inside;
+}
+ul{
+    padding: 10px;
+    list-style: upper-roman;
+    list-style-position: inside;
+}
+a:hover{
+    text-decoration: underline;
+}
+.buttons{
+    padding-bottom: 20px;
+    border-bottom: 2px solid grey;
+}
+
+#ascendButton,#descendButton{
+    border: 1px soild black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: #ec8383;
+    padding: 10px 5px;
+}
+#ascendButton{
+    margin-left: 5px;
+}
+#ascendButton:hover,#descendButton:hover{
+    background-color: #EF6262;
+    cursor: pointer;
+}
